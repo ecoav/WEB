@@ -1,11 +1,13 @@
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
+const buttons = document.querySelectorAll("nav button");
+const pages = document.querySelectorAll(".page");
 
-document.querySelectorAll(".fade").forEach(el => {
-  observer.observe(el);
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = btn.dataset.page;
+
+    pages.forEach(p => {
+      p.classList.remove("active");
+      if (p.id === target) p.classList.add("active");
+    });
+  });
 });
