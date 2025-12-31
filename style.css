@@ -1,52 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #f6f1eb;
-    color: #3a2f2f;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f6f1eb;
+  color: #2e2a28;
 }
 
 header {
-    padding: 80px 20px 40px;
+  padding: 60px 40px;
+  text-align: center;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.2rem;
-    font-weight: 600;
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f6f1eb, #e6ddd4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-header p {
-    font-size: 1.1rem;
-    color: #7a6d68;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a2f2f;
+  font-weight: 500;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
 }
 
 section {
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 0 20px;
+  padding: 60px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 15px;
+.music-grid, .projects {
+  display: grid;
+  gap: 30px;
 }
 
-p {
-    font-size: 1rem;
-    color: #4f4440;
+.track, .project {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-footer {
-    margin-top: 80px;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #8a7f7b;
-}
