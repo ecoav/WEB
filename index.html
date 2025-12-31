@@ -3,140 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Érik — Artista & Creativo</title>
+  <title>Érik — Artista</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="logo">Érik</div>
   <nav>
-    <button data-section="home">Inicio</button>
-    <button data-section="about">Sobre mí</button>
-    <button data-section="music">Música</button>
-    <button data-section="projects">Proyectos</button>
-    <button data-section="gallery">Galería</button>
-    <button data-section="contact">Contacto</button>
+    <a data-section="home">Inicio</a>
+    <a data-section="about">Sobre mí</a>
+    <a data-section="music">Música</a>
+    <a data-section="projects">Proyectos</a>
+    <a data-section="contact">Contacto</a>
   </nav>
 </header>
 
-<!-- ================= HOME ================= -->
+<main>
+
 <section id="home" class="section hero active">
   <div class="hero-content">
-    <h1>Crear. Sentir. Respirar.</h1>
-    <p>
-      Un espacio donde la música, la emoción y la estética se fusionan.
-      Aquí nace lo que no siempre se puede decir con palabras.
-    </p>
-    <button class="cta" data-go="music">Explorar</button>
+    <h1>Crear. Sentir. Existir.</h1>
+    <p>Un espacio donde la música, el arte y la emoción se encuentran.</p>
+    <button data-scroll="about">Descubrir</button>
   </div>
 </section>
 
-<!-- ================= SOBRE MÍ ================= -->
 <section id="about" class="section">
   <h2>Sobre mí</h2>
   <p>
-    Mi nombre es Érik. Creo música y experiencias visuales desde la emoción,
-    la introspección y el silencio. Mi trabajo mezcla sensibilidad, estética
-    y narrativa para contar historias que no necesitan explicación.
+    Soy un artista independiente que explora emociones a través del sonido,
+    el diseño y la palabra. Cada proyecto nace desde la introspección,
+    la calma y el deseo de conectar.
   </p>
 
-  <p>
-    Este proyecto nace de la necesidad de expresarme sin filtros, de crear
-    un espacio donde la música y la imagen conviven como una sola cosa.
-  </p>
-
-  <p>
-    Cada canción, cada imagen y cada textura está pensada para transmitir
-    una sensación, no solo un sonido.
-  </p>
+  <div class="stats">
+    <div><strong>+20</strong><span>Canciones</span></div>
+    <div><strong>5</strong><span>Años creando</span></div>
+    <div><strong>100%</strong><span>Independiente</span></div>
+  </div>
 </section>
 
-<!-- ================= MUSIC ================= -->
 <section id="music" class="section">
   <h2>Música</h2>
-  <p>
-    Canciones creadas desde la introspección. Sonidos cálidos,
-    atmósferas lentas y letras que buscan quedarse.
-  </p>
-
-  <div class="music-player">
-    <h3>Single — Demo</h3>
-    <audio controls>
-      <source src="assets/demo.mp3" type="audio/mpeg">
-      Tu navegador no soporta audio.
-    </audio>
-  </div>
+  <p>Explora mis últimos lanzamientos y demos.</p>
 
   <div class="music-grid">
-    <div class="track">Tema 01 — Introspección</div>
-    <div class="track">Tema 02 — Silencio</div>
-    <div class="track">Tema 03 — Luz Tardía</div>
-    <div class="track">Tema 04 — Respirar</div>
+    <div class="track">
+      <h3>Luz Tardía</h3>
+      <audio controls>
+        <source src="assets/demo.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track">
+      <h3>Noches Lentas</h3>
+      <audio controls>
+        <source src="assets/demo.mp3" type="audio/mpeg">
+      </audio>
+    </div>
   </div>
 </section>
 
-<!-- ================= PROYECTOS ================= -->
 <section id="projects" class="section">
   <h2>Proyectos</h2>
 
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Proyecto Visual</h3>
-      <p>
-        Serie fotográfica y conceptual inspirada en la nostalgia,
-        la noche y la introspección.
-      </p>
+  <div class="cards">
+    <div class="card">
+      <h3>Proyecto Sonoro</h3>
+      <p>Exploración de texturas, ambient y melodía.</p>
     </div>
 
-    <div class="project-card">
-      <h3>EP Independiente</h3>
-      <p>
-        Producción musical personal con influencias indie,
-        ambient y minimalistas.
-      </p>
+    <div class="card">
+      <h3>Visual Identity</h3>
+      <p>Diseño visual inspirado en emociones y silencio.</p>
     </div>
 
-    <div class="project-card">
-      <h3>Dirección Creativa</h3>
-      <p>
-        Diseño visual, narrativa y estética aplicada a proyectos artísticos.
-      </p>
+    <div class="card">
+      <h3>Live Sessions</h3>
+      <p>Sesiones íntimas grabadas en estudio.</p>
     </div>
   </div>
 </section>
 
-<!-- ================= GALERÍA ================= -->
-<section id="gallery" class="section">
-  <h2>Galería</h2>
-
-  <div class="gallery-grid">
-    <div class="img-box"><img src="assets/hero.jpg" alt=""></div>
-    <div class="img-box"><img src="assets/hero.jpg" alt=""></div>
-    <div class="img-box"><img src="assets/hero.jpg" alt=""></div>
-    <div class="img-box"><img src="assets/hero.jpg" alt=""></div>
-  </div>
-</section>
-
-<!-- ================= CONTACTO ================= -->
 <section id="contact" class="section">
   <h2>Contacto</h2>
-
-  <p>Si quieres colaborar o simplemente decir hola:</p>
-
-  <form class="contact-form">
+  <p>¿Quieres colaborar o simplemente hablar?</p>
+  <form>
     <input type="text" placeholder="Nombre">
     <input type="email" placeholder="Email">
     <textarea placeholder="Mensaje"></textarea>
-    <button type="submit">Enviar</button>
+    <button>Enviar</button>
   </form>
 </section>
 
-<footer>
-  <p>© 2025 — Érik. Todos los derechos reservados.</p>
-</footer>
+</main>
 
 <script src="js/app.js"></script>
 </body>
